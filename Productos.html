@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link  rel="icon"   href="https://pruebaeg180196.000webhostapp.com/logo_size_invert.jpg" type="image/png" />
+    <link rel="icon" href="https://pruebaeg180196.000webhostapp.com/logo_size_invert.jpg" type="image/png" />
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,7 +17,9 @@
     <div class=" text-white">
         <!--Barra navegación-->
         <nav class="navbar navbar-expand-lg navbar-dark ;  background-color: ##ffffff00; ">
-            <a class="navbar-brand" href="#"> <img src="https://pruebaeg180196.000webhostapp.com/3880313004_f05a519d-0079-43fc-b0fb-70e719404e68.png" alt="" height="40px"> </a>
+            <a class="navbar-brand" href="#"> <img
+                    src="https://pruebaeg180196.000webhostapp.com/3880313004_f05a519d-0079-43fc-b0fb-70e719404e68.png"
+                    alt="" height="40px"> </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -58,74 +60,264 @@
             <!-- For Demo Purpose-->
 
 
+
             <!-- First Row [Prosucts]-->
             <h2 class="font-weight-bold mb-2 text-dark">Productos por categorias</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                    <li class="breadcrumb-item text-dark" aria-current="page">Categorias</li>
 
-            <div class="row pb-5 mb-4">
-                <div class="col-lg-3 col-md-5 mb-4 mb-lg-0 div-img ">
-                    <a href="#">
-                        <!-- Card-->
-                        <div class="card rounded shadow-sm border-secundary  img">
-                            <div class="card-body p-4">
-                                <img src="https://pisces.bbystatic.com/image2/BestBuy_MX/images/products/1000/1000216598_sa.jpg"
-                                    alt="" class="img-fluid d-block mx-auto mb-5 dimension_img">
-    
-                                <h5 class="text-center"> <a href="#" class=" text-center">Mouse</a></h5>
-                                
-                            </div>
-                        </div>
-                    </a>
-                    <div class="btn btn-warning text "> <a href="" class="text-dark"> Ver más</a></div>
+                </ol>
+            </nav>
+
+
+
+
+            <div class="row text-dark ">
+
+                <div class="col-6 d-md-none">
+                    <button id="show_filters" type="button"
+                        class="btn btn-outline-secondary btn-filter btn-block my-0 mb-3 d-md-none">
+                        <i class="fas fa-sliders-h"></i> Filters <span class="badge badge-light">0</span>
+                    </button>
                 </div>
                 
-                <div class="col-lg-3 col-md-5 mb-4 mb-lg-0 div-img ">
-                    <a href="#">
-                        <!-- Card-->
-                        <div class="card rounded shadow-sm border-secundary   img">
-                            <div class="card-body p-4">
-                                <img src="https://static-geektopia.com/storage/t/p/787/78702/1400x700/rog-strix-flare.jpg"
-                                    alt="" class="img-fluid d-block mx-auto mb-5 dimension_img">
-    
-                                <h5 class="text-center"> <a href="#" class=" text-center">Teclados</a></h5>
-                                
+                <div class="col-lg-3 col-md-4">
+
+                    <form id="filters" method="get"
+                        action="/techno?q=&amp;min=&amp;max=&amp;authenticity_token=V2AlcPxUp5cTG4IEmytA7%2BW5yd6bH5qy4I2VTrb90Sk%3D">
+                        <input type="hidden" name="q" value="">
+
+                        <div id="side-filters">
+
+                            <h4>Filtrar por</h4>
+
+                            <div class="filter_wrapper card p-3 mb-3">
+                                <h5>Cateogoria</h5>
+                                <ul class="category_menu_list small">
+
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" id="687718" class="custom-control-input checkbox"
+                                                name="" value="687718"
+                                                onchange="">
+                                            <label class="custom-control-label name" for="687718">Celular</label>
+                                            <span class="count">1</span>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" id="687719" class="custom-control-input checkbox"
+                                                name="" value="687719"
+                                                onchange="">
+                                            <label class="custom-control-label name" for="687719">Periferico</label>
+                                            <span class="count">1</span>
+                                        </div>
+                                    </li>
+
+                                </ul>
                             </div>
-                        </div>
-                    </a>
-                    <div class="btn btn-warning text "> <a href="" class="text-dark"> Ver más</a></div>
-                </div>
-                <div class="col-lg-3 col-md-5 mb-4 mb-lg-0 div-img ">
-                    <a href="#">
-                        <!-- Card-->
-                        <div class="card rounded shadow-sm border-secundary   img">
-                            <div class="card-body p-4">
-                                <img src="https://www.65ymas.com/uploads/s1/31/00/99/los-tele-fonos-mo-viles-ma-s-innovadores-de-este-2020-samsung-galaxy-s20-y-s20.jpeg"
-                                    alt="" class="img-fluid d-block mx-auto mb-5 dimension_img">
-    
-                                <h5 class="text-center"> <a href="#" class=" text-center">Celulares</a></h5>
-                                
+
+
+
+
+                            <div id="price-filter" class="filter_wrapper mb-3" data-url="price">
+                                <h5>Price</h5>
+                                <div class="form-row align-items-center">
+                                    <div class="col-6">
+                                        <label class="mb-0" for="min">De</label>
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="mb-0" for="max">Hasta</label>
+                                    </div>
+                                    <div class="col-6">
+                                        <input id="min" placeholder="$5.000" class="form-control" name="min"
+                                            type="number" min="0">
+                                    </div>
+                                    <div class="col-6">
+                                        <input id="max" placeholder="$1.290.000" class="form-control" name="max"
+                                            type="number" min="0">
+                                    </div>
+                                    <div class="col-12 mt-2">
+                                        <!--
+                                        <small class="price_message alert alert-warning py-2 px-3 mb-2">The maximum
+                                            price cannot be lower than the minimum price.</small> -->
+                                        <button class="btn btn-primary " type="submit">Selecionar<i  class="fas fa-arrow-right"></i></button>
+                                    </div>
+                                </div>
                             </div>
+
+                            <div class="d-block d-md-none">
+
+                                <div class="form-group row">
+                                    <div class="col-12">
+                                        <h5>Sort by:</h5>
+                                    </div>
+                                    <div class="col-sm-12 col-md-8">
+                                        <div class="field-group select">
+                                            <select class="form-control" onchange="">
+
+                                                <option selected="selected"
+                                                    value="/techno/position/asc#category-gallery">
+                                                    Position
+                                                </option>
+
+                                                <option value="/techno/name/asc#category-gallery">
+                                                    Name: A to Z
+                                                </option>
+
+                                                <option value="/techno/name/desc#category-gallery">
+                                                    Name: Z to A
+                                                </option>
+
+                                                <option value="/techno/price/asc#category-gallery">
+                                                    Price: Low to High
+                                                </option>
+
+                                                <option value="/techno/price/desc#category-gallery">
+                                                    Price: High to Low
+                                                </option>
+
+                                                <option value="/techno/date/desc#category-gallery">
+                                                    Date: Newest first
+                                                </option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
                         </div>
-                    </a>
-                    <div class="btn btn-warning text "> <a href="" class="text-dark"> Ver más</a></div>
                 </div>
 
-              <div class="col-lg-3 col-md-5 mb-4 mb-lg-0 div-img ">
-                    <a href="#">
-                        <!-- Card-->
-                        <div class="card rounded shadow-sm border-secundary   img">
-                            <div class="card-body p-4">
-                                <img src="https://www.novicompu.com/11870-large_default/audifonos-con-microfono-one-de-cuero-tipo-dj-para-pc-o-laptop.jpg"
-                                    alt="" class="img-fluid d-block mx-auto mb-5 dimension_img">
-    
-                                <h5 class="text-center"> <a href="#" class=" text-center">Audifonos</a></h5>
-                                
+                <div class="col-lg-9 col-md-8">
+
+                    <div class="row justify-content-between mb-4">
+                        <div class="col-md-5 product-qty d-none d-md-block">
+                            <strong>8 Product(s)</strong>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 d-none d-md-block">
+                            <div class="form-group row">
+                                <label class="col-sm-12 col-md-4 col-form-label col-form-label-sm text-md-right">Sort
+                                    by:</label>
+                                <div class="col-sm-12 col-md-8">
+                                    <div class="field-group select">
+                                        <select class="form-control" onchange="">
+
+                                            <option selected="selected" value="/techno/position/asc#category-gallery">
+                                                Position
+                                            </option>
+
+                                            <option value="/techno/name/asc#category-gallery">
+                                                Name: A to Z
+                                            </option>
+
+                                            <option value="/techno/name/desc#category-gallery">
+                                                Name: Z to A
+                                            </option>
+
+                                            <option value="/techno/price/asc#category-gallery">
+                                                Price: Low to High
+                                            </option>
+
+                                            <option value="/techno/price/desc#category-gallery">
+                                                Price: High to Low
+                                            </option>
+
+                                            <option value="/techno/date/desc#category-gallery">
+                                                Date: Newest first
+                                            </option>
+
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </a>
-                    <div class="btn btn-warning text "> <a href="" class="text-dark"> Ver más</a></div>
+                    </div>
+
+                    <div class="row mb-md-5 mb-4 mx-n2">
+
+                        <div class="col-lg-3 col-md-5 mb-4 mb-lg-0 div-img ">
+                            <a href="#">
+                                <!-- Card-->
+                                <div class="card rounded shadow-sm border-secundary  img">
+                                    <div class="card-body p-4">
+                                        <img src="https://pisces.bbystatic.com/image2/BestBuy_MX/images/products/1000/1000216598_sa.jpg"
+                                            alt="" class="img-fluid d-block mx-auto mb-5 dimension_img">
+        
+                                        <h5 class="text-center"> <a href="#" class=" text-center">Mouse</a></h5>
+        
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="btn btn-warning text "> <a href="" class="text-dark"> Ver más</a></div>
+                        </div>
+        
+        
+                        <div class="col-lg-3 col-md-5 mb-4 mb-lg-0 div-img ">
+                            <a href="#">
+                                <!-- Card-->
+                                <div class="card rounded shadow-sm border-secundary   img">
+                                    <div class="card-body p-4">
+                                        <img src="https://static-geektopia.com/storage/t/p/787/78702/1400x700/rog-strix-flare.jpg"
+                                            alt="" class="img-fluid d-block mx-auto mb-5 dimension_img">
+        
+                                        <h5 class="text-center"> <a href="#" class=" text-center">Teclados</a></h5>
+        
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="btn btn-warning text "> <a href="" class="text-dark"> Ver más</a></div>
+                        </div>
+                        <div class="col-lg-3 col-md-5 mb-4 mb-lg-0 div-img ">
+                            <a href="#">
+                                <!-- Card-->
+                                <div class="card rounded shadow-sm border-secundary   img">
+                                    <div class="card-body p-4">
+                                        <img src="https://www.65ymas.com/uploads/s1/31/00/99/los-tele-fonos-mo-viles-ma-s-innovadores-de-este-2020-samsung-galaxy-s20-y-s20.jpeg"
+                                            alt="" class="img-fluid d-block mx-auto mb-5 dimension_img">
+        
+                                        <h5 class="text-center"> <a href="#" class=" text-center">Celulares</a></h5>
+        
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="btn btn-warning text "> <a href="" class="text-dark"> Ver más</a></div>
+                        </div>
+        
+                        <div class="col-lg-3 col-md-5 mb-4 mb-lg-0 div-img ">
+                            <a href="#">
+                                <!-- Card-->
+                                <div class="card rounded shadow-sm border-secundary   img">
+                                    <div class="card-body p-4">
+                                        <img src="https://www.novicompu.com/11870-large_default/audifonos-con-microfono-one-de-cuero-tipo-dj-para-pc-o-laptop.jpg"
+                                            alt="" class="img-fluid d-block mx-auto mb-5 dimension_img">
+        
+                                        <h5 class="text-center"> <a href="#" class=" text-center">Audifonos</a></h5>
+        
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="btn btn-warning text "> <a href="" class="text-dark"> Ver más</a></div>
+                        </div>
+        
+
+
+                        <div class="col-12">
+
+                        </div>
+                    </div>
                 </div>
 
-    
+
+               
+
 
             </div>
 
@@ -140,9 +332,9 @@
 
 
 
-      <style>
+        <style>
 
-      </style>
+        </style>
 
 
         <!-- Optional JavaScript -->
