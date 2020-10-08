@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="bg1 text-white">
+    <div class=" text-white">
         <!--Barra navegación-->
         <nav class="navbar navbar-expand-lg navbar-dark ;  ">
             <a class="navbar-brand" href="#">Tienda</a>
@@ -53,15 +53,31 @@
         <!--Imagen de presentacion-->
 
 
-       
-        
 
-       
-        <div class="bg">
-            <h1 class="text-white text-left ml-4 mt-5" style="font-family: 'Fredoka One', cursive;">LO MEJOR EN
-                TECNOLOGIA</h1>
-            <h1 class="text-white ml-4 " style="font-family: 'Rajdhani', sans-serif;">En una sola pagina </h1>
+
+
+
+        <!-- Card-->
+
+        <div class="contenedor">
+            <img src="https://eloutput.com/app/uploads-eloutput.com/2019/04/razer-ripsaw-hd-4k.jpg" alt=""
+                class="img-fluid d-block mx-auto mb-5 dimension_img_index">
+
+            <div class="centrado text-white">
+          <h1 class="" style="font-family: 'Fredoka One', cursive;">LO MEJOR EN TECNOLOGIA <h3 style="font-family: 'Rajdhani', sans-serif;">En una sola pagina </h3></h1>
+
+          <a href="" class="btn btn-outline-warning "> Ver categorias</a>
+            </div>
+
+           
+         
         </div>
+
+
+
+
+
+
 
     </div>
 
@@ -88,9 +104,9 @@
                                 <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
                             </ul>
                         </div>
-                        
+
                     </div>
-                    
+
                 </a>
                 <div class="btn btn-warning text "> <a href="" class="text-dark"> Agregar al carrito </a></div>
             </div>
@@ -176,7 +192,7 @@
             </div>
 
             <div class="col-lg-3 col-md-5 mb-4 mb-lg-0 div-img ">
-                <a href="#" >
+                <a href="#">
                     <!-- Card-->
                     <div class="card rounded shadow-sm border-0   img">
                         <div class="card-body p-4">
@@ -250,75 +266,78 @@
 
 
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
-
-        body,
-        html {
-            height: 100%;
-
-
-        }
 
 
 
-        .inner {
-            overflow: hidden;
-        }
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
 
-        .inner img {
-            transition: all 1.5s ease;
-        }
+            body,
+            html {
+                height: 100%;
 
-        .inner:hover img {
-            transform: scale(1.5);
-        }
 
-        .navbar {
-            background: black;
-        }
-
-        .nav-item::after {
-            content: '';
-            display: block;
-            width: 0px;
-            height: 2px;
-            background: #fec400;
-            transition: 0.2s;
-        }
-
-        .nav-item:hover::after {
-            width: 100%;
-        }
-
-        .navbar-dark .navbar-nav .active>.nav-link,
-        .navbar-dark .navbar-nav .nav-link.active,
-        .navbar-dark .navbar-nav .nav-link.show,
-        .navbar-dark .navbar-nav .show>.nav-link,
-        .navbar-dark .navbar-nav .nav-link:focus,
-        .navbar-dark .navbar-nav .nav-link:hover {
-            color: #fec400;
-        }
-
-        .nav-link {
-            padding: 15px 5px;
-            transition: 0.2s;
-        }
-
-        .dropdown-item.active,
-        .dropdown-item:active {
-            color: #212529;
-        }
-
-        .dropdown-item:focus,
-        .dropdown-item:hover {
-            background: #fec400;
-        }
+            }
 
 
 
-        /*
+            .inner {
+                overflow: hidden;
+            }
+
+            .inner img {
+                transition: all 1.5s ease;
+            }
+
+            .inner:hover img {
+                transform: scale(1.5);
+            }
+
+            .navbar {
+                background: black;
+            }
+
+            .nav-item::after {
+                content: '';
+                display: block;
+                width: 0px;
+                height: 2px;
+                background: #fec400;
+                transition: 0.2s;
+            }
+
+            .nav-item:hover::after {
+                width: 100%;
+            }
+
+            .navbar-dark .navbar-nav .active>.nav-link,
+            .navbar-dark .navbar-nav .nav-link.active,
+            .navbar-dark .navbar-nav .nav-link.show,
+            .navbar-dark .navbar-nav .show>.nav-link,
+            .navbar-dark .navbar-nav .nav-link:focus,
+            .navbar-dark .navbar-nav .nav-link:hover {
+                color: #fec400;
+            }
+
+            .nav-link {
+                padding: 15px 5px;
+                transition: 0.2s;
+            }
+
+            .dropdown-item.active,
+            .dropdown-item:active {
+                color: #212529;
+            }
+
+            .dropdown-item:focus,
+            .dropdown-item:hover {
+                background: #fec400;
+            }
+
+
+
+            /*
 *
 * ==========================================
 * FOR DEMO PURPOSES
@@ -329,105 +348,142 @@
 
 
 
-        .social-link {
-            width: 30px;
-            height: 30px;
-            border: 1px solid #ddd;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #666;
-            border-radius: 50%;
-            transition: all 0.3s;
-            font-size: 0.9rem;
-        }
+            .social-link {
+                width: 30px;
+                height: 30px;
+                border: 1px solid #ddd;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #666;
+                border-radius: 50%;
+                transition: all 0.3s;
+                font-size: 0.9rem;
+            }
 
-        .social-link:hover,
-        .social-link:focus {
-            background: #ddd;
-            text-decoration: none;
-            color: #555;
-        }
+            .social-link:hover,
+            .social-link:focus {
+                background: #ddd;
+                text-decoration: none;
+                color: #555;
+            }
 
-        .progress {
-            height: 10px;
-        }
-
-
-        /*animacion */
-        .div-img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .div-img .img {
-            -webkit-border-radius: 10px;
-            -moz-border-radius: 10px;
-            border-radius: 10px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 100%;
-            transform: scale(1);
-            -ms-transform: scale(1);
-            -moz-transform: scale(1);
-            -webkit-transform: scale(1);
-            -o-transform: scale(1);
-            -webkit-transition: all 500ms ease-in-out;
-            -moz-transition: all 500ms ease-in-out;
-            -ms-transition: all 500ms ease-in-out;
-            -o-transition: all 500ms ease-in-out;
-        }
-
-        .div-img .text {
-            padding-top: 2px;
-            display: block;
-            text-align: center;
-            width: 100%;
-            transform: translate(0px);
-            -webkit-transition: all 500ms ease-in-out;
-            -moz-transition: all 500ms ease-in-out;
-            -ms-transition: all 500ms ease-in-out;
-            -o-transition: all 500ms ease-in-out;
-            opacity: 0;
-            transition: transfom opacity 1.5s;
-        }
-
-        .div-img:hover .img {
-            transform: scale(0.9);
-            -ms-transform:scale(0.9);
-            -moz-transform: scale(0.9);
-            -webkit-transform: scale(0.9);
-            -o-transform: scale(0.9);
-        }
-
-        .div-img:hover .text {
-            transform: translate(0px, -20px);
-            opacity: 1;
-        }
-/*dimension img*/
-        .dimension_img {
-            margin-bottom: 30px;
-            width: 500px;
-            height: 200px;
-            object-fit: contain;
-        }
-    </style>
+            .progress {
+                height: 10px;
+            }
 
 
+            /*animacion */
+            .div-img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
+            .div-img .img {
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                transform: scale(1);
+                -ms-transform: scale(1);
+                -moz-transform: scale(1);
+                -webkit-transform: scale(1);
+                -o-transform: scale(1);
+                -webkit-transition: all 500ms ease-in-out;
+                -moz-transition: all 500ms ease-in-out;
+                -ms-transition: all 500ms ease-in-out;
+                -o-transition: all 500ms ease-in-out;
+            }
+
+            .div-img .text {
+                padding-top: 2px;
+                display: block;
+                text-align: center;
+                width: 100%;
+                transform: translate(0px);
+                -webkit-transition: all 500ms ease-in-out;
+                -moz-transition: all 500ms ease-in-out;
+                -ms-transition: all 500ms ease-in-out;
+                -o-transition: all 500ms ease-in-out;
+                opacity: 0;
+                transition: transfom opacity 1.5s;
+            }
+
+            .div-img:hover .img {
+                transform: scale(0.9);
+                -ms-transform: scale(0.9);
+                -moz-transform: scale(0.9);
+                -webkit-transform: scale(0.9);
+                -o-transform: scale(0.9);
+            }
+
+            .div-img:hover .text {
+                transform: translate(0px, -20px);
+                opacity: 1;
+            }
+
+            /*dimension img*/
+            .dimension_img {
+                margin-bottom: 30px;
+                width: 500px;
+                height: 200px;
+                object-fit: contain;
+            }
+
+            .bg1 {
+                /* The image used */
+                background-image: url("https://eloutput.com/app/uploads-eloutput.com/2019/04/razer-ripsaw-hd-4k.jpg");
+                width: 20000PX;
+                height: 400px;
+                object-fit: contain;
+                background-repeat: no-repeat;
+            }
+
+            .dimension_img_index {
+                margin-bottom: 30px;
+                width: 20000PX;
+                height: 300px;
+                object-fit: cover;
+            }
+
+            .contenedor {
+                position: relative;
+                display: inline-block;
+                text-align: center;
+            }
+
+            .texto-encima {
+                position: absolute;
+                top: 15px;
+                left: 10px;
+            }
+
+
+            .centrado {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
