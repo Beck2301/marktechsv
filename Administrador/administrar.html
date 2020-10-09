@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="https://pruebaeg180196.000webhostapp.com/logo_size_invert.jpg" type="image/png" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://pruebaeg180196.000webhostapp.com/css/bootstrap.css">
+    <link rel="stylesheet" href="https://pruebaeg180196.000webhostapp.com/css/tienda.css">
+    <title>Tienda</title>
+</head>
+
+<body>
+    <div class=" text-white">
+        <!--Barra navegación-->
+        <nav class="navbar navbar-expand-lg navbar-dark ;  background-color: ##ffffff00; ">
+            <a class="navbar-brand" href="#"> <img
+                    src="https://pruebaeg180196.000webhostapp.com/3880313004_f05a519d-0079-43fc-b0fb-70e719404e68.png"
+                    alt="" height="40px"> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse active" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../Productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categorias
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+
+                </ul>
+                <a class="btn btn-warning my-2 my-sm-0 mr-2" type="submit"  href="login.html" ><img src="https://www.flaticon.es/premium-icon/icons/svg/2550/2550359.svg" alt="" height="25px" ></a>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+
+
+        <div class="container py-5">
+            <!-- For Demo Purpose-->
+
+
+
+            <!-- First Row [Prosucts]-->
+            <h2 class="font-weight-bold mb-2 text-dark">Administador de pagina</h2>
+        
+
+
+
+            <div class="row text-dark ">
+
+                <div class="col-6 d-md-none">
+                    <button id="show_filters" type="button"
+                        class="btn btn-outline-secondary btn-filter btn-block my-0 mb-3 d-md-none">
+                        <i class="fas fa-sliders-h"></i> Filters <span class="badge badge-light">0</span>
+                    </button>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+
+                    <form id="filters" method="get"
+                        action="/techno?q=&amp;min=&amp;max=&amp;authenticity_token=V2AlcPxUp5cTG4IEmytA7%2BW5yd6bH5qy4I2VTrb90Sk%3D">
+                        <input type="hidden" name="q" value="">
+
+                        <div id="side-filters">
+
+                     
+
+                            <div class="filter_wrapper card p-3 mb-3">
+                                <h5>Cateogoria</h5>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                      <a class="nav-link active" href="#">Facturas</a>
+                                    </li>
+                                  
+                                  </ul>
+                            </div>
+
+
+
+
+                    
+
+                  
+
+                        </div>
+                </div>
+
+                <div class="col-lg-9 col-md-8">
+
+                 
+
+                    <div class="row mb-md-5 mb-4 mx-n2">
+
+                        <div class="col-lg-3 col-md-5 mb-4 mb-lg-0 div-img ">
+                            <a href="listarproducto.html">
+                                <!-- Card-->
+                                <div class="card rounded shadow-sm border-secundary  img">
+                                    <div class="card-body p-4">
+                                        <img src="https://www.flaticon.es/premium-icon/icons/svg/3172/3172106.svg"
+                                            alt="" class="img-fluid d-block mx-auto mb-5 dimension_img">
+        
+                                        <h5 class="text-center"> <a href="listarproducto.html" class=" text-center">Productos</a></h5>
+        
+                                    </div>
+                                </div>
+                            </a>
+                          
+                        </div>
+        
+        
+                        <div class="col-lg-3 col-md-5 mb-4 mb-lg-0 div-img ">
+                            <a href="listarcategoria.html">
+                                <!-- Card-->
+                                <div class="card rounded shadow-sm border-secundary   img">
+                                    <div class="card-body p-4">
+                                        <img src="https://www.flaticon.es/premium-icon/icons/svg/3405/3405818.svg"
+                                            alt="" class="img-fluid d-block mx-auto mb-5 dimension_img">
+        
+                                        <h5 class="text-center"> <a href="listarcategoria.html" class=" text-center">Categorias</a></h5>
+        
+                                    </div>
+                                </div>
+                            </a>
+                      
+                        </div>
+                        <div class="col-lg-3 col-md-5 mb-4 mb-lg-0 div-img ">
+                            <a href="listarusuarios.html">
+                                <!-- Card-->
+                                <div class="card rounded shadow-sm border-secundary   img">
+                                    <div class="card-body p-4">
+                                        <img src="https://www.flaticon.es/svg/static/icons/svg/813/813325.svg"
+                                            alt="" class="img-fluid d-block mx-auto mb-5 dimension_img">
+        
+                                        <h5 class="text-center"> <a href="listarusuarios.html" class=" text-center">Usuarios</a></h5>
+        
+                                    </div>
+                                </div>
+                            </a>
+                            
+                        </div>
+        
+                        <div class="col-lg-3 col-md-5 mb-4 mb-lg-0 div-img ">
+                            <a href="listarpedidos.html">
+                                <!-- Card-->
+                                <div class="card rounded shadow-sm border-secundary   img">
+                                    <div class="card-body p-4">
+                                        <img src="https://www.flaticon.es/premium-icon/icons/svg/3172/3172101.svg"
+                                            alt="" class="img-fluid d-block mx-auto mb-5 dimension_img">
+        
+                                        <h5 class="text-center"> <a href="listarpedidos.html" class=" text-center">Pedidos</a></h5>
+        
+                                    </div>
+                                </div>
+                            </a>
+                    
+                        </div>
+        
+
+
+                        <div class="col-12">
+
+                        </div>
+                    </div>
+                </div>
+
+
+               
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+        <style>
+
+        </style>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
